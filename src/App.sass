@@ -1,0 +1,118 @@
+// https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css
+// https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css
+// https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css
+// https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu')
+
+body
+	// https://github.com/PhysRex/GameOfLife/blob/master/ForectBackground4-pixelArt.png?raw=true
+	// https://github.com/PhysRex/GameOfLife/blob/master/ForectBackground3-pixelArt.png?raw=true
+	background: url("./_img/ForestBackground5-PixelArt.JPG") no-repeat top center fixed
+	background-size: cover
+	opacity: 0.9
+	// height: 100vh
+	// width: 100vw
+
+.title *
+	font-family: 'Baloo Tammudu', cursive
+	font-size: 7em !important
+	margin-top: 30px
+	margin-bottom: -10px
+
+	color: #ddc
+	text-shadow: 0px 2px 3px rgba(0,0,0,0.9)
+	background-clip: text
+
+// ##################################
+// ######### CONTROLS #########
+.controls
+	max-width: 960px
+
+.panel-heading
+	padding: 8px !important
+
+.panel-heading *
+	font-size: 2em !important
+
+.panel-body
+	display: flex
+	justify-content: center
+	flex-direction: column
+	// align-items: center
+	// display: inline-block
+	// vertical-align: middle
+
+	height: 100px
+	overflow: y-axis
+
+@media screen and (max-width: 670px)
+	.pane-body
+		height: 10vh
+
+.panel-num
+	font-size: 3em
+	font-weight: bold
+
+.btn-group
+	// box-shadow: 2px 2px 5px rgba(0,0,0,0.4)
+
+.btn
+	font-weight: bold
+	font-size: 1.2em
+
+.btn-ctrls
+	// height: 10px
+	min-width: 55px
+
+.btn-dials
+	// height: 10px
+	width: 40px
+
+
+// #########################
+// ######### BOARD #########
+$boxDims: 15
+$minWidth: $boxDims * 30
+
+.board
+	padding: 1em
+	// border: 1px solid #000
+
+.row-box
+	min-width: ($minWidth + 100)+px
+	height: ($boxDims - 1)+px
+	
+	
+.col-box
+	min-width: ($minWidth + 100)+px
+	height: ($boxDims - 1)+px
+	// z-index: 1
+	
+.box
+	margin-left: -1px
+	display: inline-block
+	border: 1px  solid burlywood
+	cursor: pointer
+	user-select: none
+	height: ($boxDims)+px
+	width:  ($boxDims)+px
+	// z-index: 10
+	border-radius: 20%
+
+.box:hover
+	background-color: skyblue
+
+.box:active
+	background-color: #000
+
+.box:hover::after
+	// content: attr(data-row)
+	// font-size: .75em
+
+.off
+	color: #fff
+	background: #7C511C
+	
+.on
+	color: #fff
+	background: #6BD425
