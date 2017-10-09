@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Tammudu");
 body {
-  background: url("./_img/ForestBackground5-PixelArt.JPG") no-repeat top center fixed;
+  background: url("img/ForestBackground5-PixelArt.JPG") no-repeat top center fixed;
   background-size: cover;
   opacity: 0.9; }
 
